@@ -1,7 +1,25 @@
+@font-face
+{
+  font-family: Kreon;
+    src: url(Kreon-Regular.ttf);
+}
+
+@font-face
+{
+  font-family: Kreon;
+    src: url(Kreon-Bold.ttf);
+    font-weight: bold;
+}
+
 body {
     font-family:'Kreon',serif;
     -webkit-font-smoothing:antialiased;
     -webkit-text-size-adjust:100%;
+}
+
+ul
+{
+    padding-left: 0px;
 }
 img {
     max-height:100%;
@@ -169,7 +187,7 @@ section::before,section::after {
 ========================================================================== */
 #menu {
     
-    background:#c95500;  /*changed*/
+    background:#272727;  /*changed*/
     margin-bottom:0;
 }
 .navbar-brand h2 {
@@ -487,20 +505,43 @@ section::before,section::after {
     background: white;
 }
 
-.order-cart {
-    padding-top:2px;
-    background:#c95500;
+.confirm-order, .order-cart {
+    padding-top:4px;
+    padding-bottom: 4px;
+    background:#272727;
     color:white;
     font-size:20px;
     font-weight:normal;
-    
     z-index: 101;
+    bottom: 0px;
+    position: fixed;
+    width:100%;
 }
 
-.order-cart button {
+.confirm-order:hover
+{
+    cursor: pointer;
+}
 
-    border-radius: 0px;
+.confirm-order a {
 
+    color: white;
+}
+
+#cart-view
+{
+    border: 1px solid  lightgrey;
+    padding-top: 10px;
+}
+
+.fa-check-circle
+{
+    color: green;
+}
+
+.fa-circle-o
+{
+    color: grey;
 }
 
 

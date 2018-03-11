@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html class="no-js">
+<head>
+    <title>FoodGo | My Cart</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- css -->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- js -->
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="120" >
+
+    <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">  
+                <a class="navbar-brand" href="#">
+                    <h2>Food Go</h2>
+                </a>    
+            </div><!-- navbar-header -->
+
+        <ul class="nav navbar-nav navbar-right" style="display: none;">
+            <li>
+	            <div class="slidecontainer">
+	  				<input type="range" min="0" max="1" value="0" class="slider" id="myRange">
+				</div>	
+			</li>
+        </ul>
+
+        </div><!-- container -->
+    </div><!-- menu -->
+
+    <div id="story" class="light-wrapper">
+        <section class="ss-style-top"></section>
+        <div class="container inner">
+
+            <h2 class="section-title text-center">My Cart</h2>
+            <!-- /.services --> 
+        </div>
+        <!-- /.container -->
+    </div><!-- #story -->
+
+    <br>
+        <div class="container-fluid food" id="beverages">
+        	<div class="row">
+                <div class=" col-xs-12 col-sm-12 col-md-12">
+                    <div class="menu-items ">
+                        <ul>
+                            <li class="row">
+	                            <div class=" col-xs-6 col-sm-6 col-md-6">Espresso <span class="text-right"><i class="fa fa-minus-square"></i></span></div>
+	                            <div class=" col-xs-3 col-sm-3 col-md-3">$60 x2</div>
+                                <div class=" col-xs-3 col-sm-3 col-md-3">$120</div>
+                            </li>
+                      
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-12">
+                    <div class="menu-items ">
+                        <ul>
+                            <li class="row">
+	                            <div class=" col-xs-6 col-sm-6 col-md-6">Tea <i class="fa fa-minus-square"></i></div>
+                                <div class=" col-xs-3 col-sm-3 col-md-3">$40 x2</div>
+	                            <div class=" col-xs-3 col-sm-3 col-md-3">$80</div>
+                            </li>
+                      
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-12">
+                    <div class="menu-items ">
+                        <ul>
+                            <li class="row">
+	                            <div class=" col-xs-6 col-sm-6 col-md-6">Soft Drink <i class="fa fa-minus-square"></i></div>
+	                            <div class=" col-xs-3 col-sm-3 col-md-3">$30 x2</div>
+                                <div class=" col-xs-3 col-sm-3 col-md-3">$60</div>
+                            </li>
+                      
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- /#header --> 
+    <hr>
+    <div class="container-fluid food" id="beverages">
+            <div class="row" style="background-color:#f2f2f2;">
+                <div class=" col-xs-12 col-sm-12 col-md-12">
+                    <div class="menu-items ">
+                        <ul>
+                            <li class="row">
+                                <div class=" col-xs-9 col-sm-9 col-md-9">Total</div>
+                                <div class=" col-xs-3 col-sm-3 col-md-3">$500</div>
+                            </li>
+                      
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+            <br>
+            <div class="row">
+                <div class=" col-xs-12 col-sm-12 col-md-12 text-center">
+                    <div><a href="menu.html"><i class="fa fa-chevron-circle-left"></i> Add more to cart?</a></div>
+                </div>
+            </div>
+        </div>
+        
+     
+
+    <div id="footer" class="order-cart" style="background-color: #7ab72f;">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <a href="cart.html"><div class="col-xs-12 col-sm-12 text-center">
+                    CONFIRM ORDER
+                </div></a>
+
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.actual.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+
+		$(document).ready(function()
+		{
+	    	$(".beverages").click(function()
+	    	{
+	        	$(".food:visible").not("#beverages").hide(200);
+	        	$("#beverages").toggle(200);
+	        	//alert('nsjdcnl');
+	    	});
+		});
+
+		$(document).ready(function()
+		{
+	    	$(".starter").click(function()
+	    	{
+	        	$(".food:visible").not("#starter").hide(200);
+	        	$("#starter").toggle(200);
+	        	//alert('nsjdcnl');
+	    	});
+		});
+
+	</script>
+</body>
+</html>
